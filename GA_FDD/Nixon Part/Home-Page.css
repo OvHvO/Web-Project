@@ -1,0 +1,282 @@
+﻿*{
+  box-sizing: border-box; /* Include padding and border in width/height for all elements */
+  }
+
+
+body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+        font-family: Arial, sans-serif;
+        }
+
+
+/* ---------Sticky Header--------- */
+    .header {
+    	position: sticky;
+    	top: 0;
+    	width: 100%;
+    	background-color: #000000;
+    	padding: 10px 20px;
+    	z-index: 1000;
+    	box-sizing: border-box;
+        }
+    	 		
+	.Grid-container {
+    	display: grid;
+    	grid-template-columns: 50% auto;
+    	align-items: center; 
+    	justify-content: space-between; 
+    	gap: 20px; 
+    	padding: 0; 
+    	margin: 0; 
+    	height: auto;		
+    	}
+
+
+/* ---------Logo styling--------- */
+	.logo-title-container {
+    	justify-content: flex-end;
+    	gap: 10px;
+    	margin: 0px;
+    	padding: 0px;
+		}
+		
+	.logo {
+		width: 50px;
+		height: 50px;
+		}
+		
+	.logo-text {
+		object-fit: contain;
+		height: 50px;
+		max-width: 100%;
+		}
+
+
+/* ---------Navigation Header--------- */
+    .header nav {
+    	gap: 20px;
+		}
+
+	.header nav a {
+   		color: white;
+    	text-decoration: none;
+   		padding: 10px 15px;
+    	font-size: 18px;
+    	transition: color 1.0s ease;
+		}
+
+	.header nav a:hover {
+    	color: #999999;
+		}
+        
+/*---------Page Content---------*/
+	.image-box {
+   		position: relative; 
+    	width: 100%;
+    	height: 550px;
+    	background-color: #333333;
+   		}
+
+	.image-box img {
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover; /* Keeps the aspect ratio of the image while covering the box */
+    	overflow: hidden;
+		}
+
+	/*----Typewriter----*/
+	.typewriter {
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%); /* Center vertically and horizontally */
+		text-align: center;
+		max-width: 90%;
+		}
+
+	.typewriter h1 {
+		font-size: 60px;
+  		color: #fff;
+  		font-family: "Lucida Sans Typewriter";
+  		overflow: hidden; 
+  		border-right: 9px solid orange; 
+  		white-space: nowrap; 
+  		margin: 0 auto; 
+  		letter-spacing: 9px; 
+  		animation: 
+    		typing 3.5s steps(30, end),
+    		blink-caret .5s step-end infinite;
+		}
+    
+	/* The typing effect */
+	@keyframes typing {
+  		from { width: 0 }
+  		to { width: 100% }
+		}
+
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+  		from, to { border-color: transparent }
+  		50% { border-color: orange }
+		}
+				
+	.button-box {
+    	position: absolute;
+    	bottom: 150px;
+    	left: 50%;
+    	transform: translateX(-50%);
+    	display: flex; 
+    	justify-content: center; 
+    	gap: 20px;  
+    	}
+		
+	.button-box a {
+    	padding: 10px 20px;
+    	background-color: #C2A597;
+    	color: white;
+    	border-radius: 5px;
+    	font-size: 18px;
+    	text-decoration: none;
+    	transition: background-color 0.3s ease;	
+    	}
+
+	.button-box a:hover {
+		background-color: #808080;
+		}
+
+/*---------Moving Text---------*/
+	.moving-text {
+		background-color: black;
+		width: 100%;
+		height:40px;
+		overflow: hidden;
+		color: white;
+		padding-top: 10px;
+		font-weight: bold;
+		}
+				
+		
+/*---------Box(1)---------*/
+	.Box {
+	 	background-color:#1c1c1c;
+	 	width: 100%;
+	 	height: 260px;
+	 	}
+	
+	
+/*---------News-Section---------*/
+	.news-container {
+		display: flex;
+  		gap: 10px; /* Space between the boxes */
+  		overflow: hidden; /* Prevents text overflowing */
+  		width: 100%;
+  		padding: 30px;
+  		justify-content: space-around;
+  		white-space: normal; /* Prevent text from staying on one line */
+    	}
+
+	.news-item {
+    	background-color: #2c2c2c;
+  		width: 400px;
+  		padding: 20px;
+  		margin-right: 50px;
+  		border-radius: 10px;
+  		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  		transition: transform 0.3s ease, box-shadow 0.3s ease;
+  		color: white;
+  		text-align: center;
+  		overflow: hidden;
+  		}	
+		
+	.news-item:hover {
+   		transform: translateY(-10px);
+    	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+		}
+		
+	.news-item h3 {
+    	font-size: 1.5em;
+    	margin-bottom: 15px;
+    	color: #f39c12;
+		}
+
+
+/*---------Option Box---------*/
+	.option-container {
+    	display: flex;
+    	overflow: hidden;
+    	width: 100%;
+    	justify-content: space-around;
+    	white-space: normal;
+		}
+
+	.option-item {
+    	position: relative; /* To position the hover image correctly */
+    	background-color: white;
+    	width: 100%;
+    	height: 575px;
+    	color: black;
+    	text-align: center;
+    	overflow: hidden;
+    	border: 1px solid black;
+    	z-index: 50;
+		}
+
+	table td {
+    	display: flex;
+    	justify-content: center; /* Center horizontally */
+    	align-items: center; /* Center vertically */
+    	height: 134px; 
+    	padding: 0;
+		}
+
+	table td h3 {
+    	font-size: 90px;
+    	z-index: 50;
+		}
+
+	table td p {
+    	font-size: xx-large;
+    	z-index: 50;
+		}
+
+	.hover-image {
+    	display: none; /* Initially hidden */
+    	position: absolute; /* So it can overlay on top */
+    	top: 0; 
+    	left: 0;
+    	width: 100%; 
+    	height: 100%; 
+		}
+
+	.hover-image img {
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover; /* Ensure the image fits nicely */
+		}
+
+	article.option-item:hover .hover-image {
+    	display: block; /* Show the image on hover */
+    	z-index: 1; /* Make sure it stays on top */
+    	background-color: rgba(0, 0, 0, 0.5); 
+    	opacity: 0.5;
+		}
+				
+		
+/*---------Footer---------*/
+	.footer-box {
+    	width: 100%;
+    	height: 50px;
+    	background-color: black;
+    	color: white;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 20px;
+    	box-sizing: border-box;
+    	position: relative;
+    	z-index: 10;
+    	bottom: 0;
+    	}

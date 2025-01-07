@@ -1,0 +1,187 @@
+﻿*{
+	box-sizing:border-box;
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	
+}
+
+/* Header Section */
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #000000;
+	padding: 10px 20px;
+	z-index: 1000;
+	box-sizing: border-box;
+	}
+			 
+.Grid-container {
+	display: grid;
+	grid-template-columns: 50% auto;
+	align-items: center; 
+	justify-content: space-between; 
+	gap: 20px; 
+	padding: 0; 
+	margin: 0; 
+	height: auto;		
+	}
+
+/* LOGO DEFINE */
+.logo-text-container {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	}
+	
+.logo {
+	width: 50px;
+	height: 50px;
+	}
+	
+.logo-text {
+	object-fit: contain;
+	height: 50px;
+	max-width: 100%;
+	}
+
+
+.header nav {
+	gap: 20px;
+	}
+
+.header nav a {
+	   color: white;
+	text-decoration: none;
+	   padding: 10px 15px;
+	font-size: 18px;
+	transition: color 1.0s ease;
+	}
+
+.header nav a:hover {
+	color: #999999;
+	}
+
+.container{
+	width:100%;
+	text-align:center;
+	background-color:#1c1c1c;
+	padding:0px;
+}
+
+.upper-text{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:0px;
+	width:100%;
+	height:100px;
+	background-color:#1c1c1c;
+	color:white;
+	padding:10px 0;
+	font-size:50px;
+	font-weight:bold;
+}
+
+.center-text{
+	width:100%;
+	height:100%;
+	color:black;
+	background-color:#1c1c1c;
+	font-size:30px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	bottom:0;
+	color:#FFFFFF;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+/* Photo Container */
+.flex-title{
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	margin-top:35px;
+	text-align:center;
+	color:white;
+}
+
+
+.flex-container{
+	
+	display:flex;
+	align-items:stretch;
+	background-color:#1c1c1c;
+	justify-content:center;
+	height:600px;
+	margin-bottom:0px;
+	padding:20px;
+	}
+
+
+.flex-container .attributes{
+	background-color:darkgrey;
+	line-height:75px;  /* Defines the line of the height */
+	margin:15px;
+	width:100%;
+	height:400px;
+	margin-bottom:70px;
+	margin-top:0px;
+	flex-grow:3;
+	padding:0px;
+		
+}
+  /*  Ensure the image fit to the container */
+#img-fill{
+		width:100%;
+		height:100%;
+		object-fit:fill;
+}
+
+
+	/* Bottom Text */
+#flex-text-d{
+	background-color: white; 
+	padding:0px;
+	height:80px;
+	margin-top:-40px;
+	text-align:center;
+		
+}
+
+#role-text-d{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* Footer Section */
+
+.footer-box {
+    	width: 100%;
+    	height: 50px;
+    	background-color: black;
+    	color: white;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 20px;
+    	box-sizing: border-box;
+    	position: relative;
+    	z-index: 10;
+    	bottom: 0;
+    	margin-top:0px;
+    	}

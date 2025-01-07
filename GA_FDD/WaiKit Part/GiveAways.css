@@ -1,0 +1,191 @@
+﻿*{
+    box-sizing: border-box; /* Include padding and border in width/height for all elements */
+}
+  
+  
+body 
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+  
+  
+/* ---------Sticky Header--------- */
+    .header {
+    	position: sticky;
+    	top: 0;
+    	width: 100%;
+    	background-color: #000000;
+    	padding: 10px 20px;
+    	z-index: 1000;
+    	box-sizing: border-box;
+    	position: fixed;
+        }
+    	 		
+	.Grid-container {
+    	display: grid;
+    	grid-template-columns: 50% auto;
+    	align-items: center; 
+    	justify-content: space-between; 
+    	gap: 20px; 
+    	padding: 0; 
+    	margin: 0; 
+    	height: auto;		
+    	}
+
+
+/* ---------Logo styling--------- */
+	.logo-title-container {
+    	justify-content: flex-end;
+    	gap: 10px;
+    	padding: 0px;
+    	margin: 0px;
+		}
+		
+	.logo {
+		width: 50px;
+		height: 50px;
+		}
+		
+	.logo-text {
+		object-fit: contain;
+		height: 50px;
+		max-width: 100%;
+		}
+
+
+/* ---------Navigation Header--------- */
+    .header nav {
+    	gap: 20px;
+		}
+
+	.header nav a {
+   		color: white;
+    	text-decoration: none;
+   		padding: 10px 15px;
+    	font-size: 18px;
+    	transition: color 1.0s ease;
+		}
+
+	.header nav a:hover {
+    	color: #999999;
+		}
+          
+          
+/* ---------- Blank box ----------*/
+	.Blank {
+		background-color: #0d131a;
+		width: 100%;
+		height: 74px;
+		}	
+
+
+/*-------For title of Giveaways---------*/
+.container 
+{
+    position: relative; 
+    width: 100%;
+    height: 62%;
+    overflow: hidden; /* Prevents content overflowing */
+}
+
+.container img 
+{
+    width: 100%;
+    height: 62%;
+    object-fit: cover; /* Keeps the aspect ratio of the image while covering the box */
+    overflow: hidden;
+    display: block;
+}
+
+header h1 
+{
+    font-size: 3rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+}  
+        
+main p 
+{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+              
+footer 
+{
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.image-grid {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 100px; 
+    padding: 10px;
+    background-color: darkgray;
+}
+
+
+.flip-card {
+    position: relative;
+    flex: 1 1 calc(33% - 20px); 
+    max-width: 600px;
+    background-color: transparent;
+    width: 524px;
+    height: 400px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    background-color: #0D131A;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: #ffffff;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

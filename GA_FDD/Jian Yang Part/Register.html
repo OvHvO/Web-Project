@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="achivement_n_reg.js"></script>
+    <link rel="stylesheet" href="register.css" type="text/css" />
+	<title>Online Registration</title>
+</head>
+
+    <body>
+        <header class="header">	
+            <div class="Grid-container">
+                <!-- Logo & Title -->
+                <div class="logo-title-container">
+                <a href="../Nixon Part/Home Page.html">
+                    <img src="../Images/Logo-1.png" alt="Logo" class="logo">
+                    <img src="../Images/Logo-2.png" alt="TenMin Sports" class="logo-text">
+                </a>
+                   </div>
+                   <!-- Navigation -->
+                <nav>
+                    <a href="../Li Wei's Part/Social Media.html">Social Media</a>
+                    <a href="../Nixon Part/Basketball History.html">History</a>
+                    <a href="ahievement_awards.html">Achievement</a>
+                    <a href="About%20Us%20Page.html">About Us</a>
+                 </nav>
+             </div>
+        </header>
+
+        <form style="background-color: #f1eef5;" onsubmit="return validate()" autocomplete="off">
+            <section class="container">
+                <h1 class="reg-header">Member Registration Form</h1>
+                <p class="reg-subhead"> Please Fill in all the details</p>
+                <hr>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+
+                <label for="studentid"><b>Student ID</b></label>
+                <input type="text" placeholder="Enter Student ID" name="stuId" id="stuId" required>
+
+                <label for="email"><b>Enter your Email</b></label>
+                <input type="text" placeholder="Enter an Email" name="email"  id="email" required>
+                <hr>
+                
+
+                <button type="submit" class="regbttn">Register</button>
+
+            </section>
+
+
+
+        </form>
+
+        <section class="container">
+            <div>
+                <h1 class="newsletter-head"><b>Subscribe Our NewsLetter !</b></h1>
+                
+               
+                    <form onsubmit="return sub_validate()" autocomplete="off"> 
+                        <hr>
+                            <b>Email for Receive: </b>
+                            <input type="text" placeholder="Enter an Email" name="newsemail" id="newsemail" required>
+                            
+                            <b>Name of Receiver:</b>
+                            <input type="text" placeholder="Enter Your Name (Optional)" name="newsname" id="newsname">
+
+                        <hr>
+                        <button type="submit" class="sub-btn">Subscribe !</button>
+                    </form>
+
+            </div>
+
+
+        </section>
+
+        
+
+
+        <footer class="footer-box">
+            <p>© 2024 TenMin Sports. All Rights Reserved.</p>
+        </footer>
+    
+    </body>
+
+</html>

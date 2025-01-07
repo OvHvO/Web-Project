@@ -1,0 +1,223 @@
+﻿*{
+  box-sizing: border-box; /* Include padding and border in width/height for all elements */
+  }
+
+
+body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+        font-family: Arial, sans-serif;
+      	align-items: center;
+    	justify-content: center;
+        }
+
+
+/* ---------Sticky Header--------- */
+    .header {
+    	position: sticky;
+    	top: 0;
+    	width: 100%;
+    	background-color: #000000;
+    	padding: 10px 20px;
+    	z-index: 1000;
+    	box-sizing: border-box;
+    	position: fixed;
+        }
+    	 		
+	.Grid-container {
+    	display: grid;
+    	grid-template-columns: 50% auto;
+    	align-items: center; 
+    	justify-content: space-between; 
+    	gap: 20px; 
+    	padding: 0; 
+    	margin: 0; 
+    	height: auto;		
+    	}
+
+
+/* ---------Logo styling--------- */
+	.logo-title-container {
+    	justify-content: flex-end;
+    	gap: 10px;
+    	padding: 0px;
+    	margin: 0px;
+		}
+		
+	.logo {
+		width: 50px;
+		height: 50px;
+		}
+		
+	.logo-text {
+		object-fit: contain;
+		height: 50px;
+		max-width: 100%;
+		}
+
+
+/* ---------Navigation Header--------- */
+    .header nav {
+    	gap: 20px;
+		}
+
+	.header nav a {
+   		color: white;
+    	text-decoration: none;
+   		padding: 10px 15px;
+    	font-size: 18px;
+    	transition: color 1.0s ease;
+		}
+
+	.header nav a:hover {
+    	color: #999999;
+		}
+
+
+/* ---------- Blank box ----------*/
+	.Blank {
+		background-color: #0d131a;
+		width: 100%;
+		height: 74px;
+		}	
+		
+		
+/* ---------Description--------- */
+		
+	table {
+	  	width: 100%;
+	  	height: 150px;
+	  	padding: 0;
+	  	margin:0;
+	  	border-collapse: collapse;
+		}
+	
+	td {
+		width: 50%;
+		font-size: 25px;
+	  	padding: 10px;
+	  	border: 1px solid #ccc;
+	  	text-align: center;
+		}
+	
+	ul {
+	  	list-style-type: none;
+	  	padding: 0;
+	  	margin: 0;
+		}
+	
+	p {
+	  	margin: 0;
+		}
+		
+		
+		.Social-Box {
+		background-color: #F8F6F0;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		}
+		
+/* ------------Social Media Box---------- */
+		
+	.Social { 
+		font-size: 30px; 
+		font-weight: bold; 
+		padding: 10px;
+		text-align: center;
+		}
+		
+    .social-heading { 
+    	font-size: 20px; 
+    	color: #555; 
+    	margin: 10px 0; 
+		padding-left: 10px;
+		text-align: center;
+    	}
+    	
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        allign-items: center;
+        justify-items: center;
+        gap: 50px;
+        margin-top: 20px;
+    	}
+        	
+    .card {
+        width: 450px;
+        height: 290px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        background-color: #FFFFFF;
+
+   		}
+   		
+    .card-header, .card-footer {
+        padding: 10px;
+        font-size: 14px;
+        color: black;
+        display: flex;
+        align-items: center;
+    	}
+        	
+    .circle { 
+    	width: 30px; 
+    	height: 30px; 
+    	border-radius: 50%; 
+    	background-color: black; 
+    	margin-right: 8px; 
+    	}
+    	
+    .circle {
+		font-size: 5px;
+		}
+        	
+    .card-image {
+        background-color: #ddd;
+        height: 200px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+        font-size: 16px;
+        position: relative;
+    	}
+    
+    .card-image span {
+		position: absolute;
+		background-color: black;
+		bottom: 40px;
+		left: 200px;
+		font-weight: bold;
+		font-size: 20px;
+		color: white;
+		}
+    	
+    .TenMeme-image {
+		height: 200px;
+		width: 180px;
+		allign-items: center;
+		}
+		
+	.night-sky-image {
+		width: 180px;
+		height: 200px;
+		}
+		
+	.hiking-image {
+		width: 180px;
+		height: 200px;
+		}
+
+	.ocean-image {
+		width: 180px;
+		height: 200px;
+		}
+
+		

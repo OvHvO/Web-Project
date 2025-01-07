@@ -1,0 +1,105 @@
+﻿*{
+  box-sizing: border-box; /* Include padding and border in width/height for all elements */
+  }
+
+
+body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+        font-family: Arial, sans-serif;
+      	align-items: center;
+    	justify-content: center;
+        }
+
+/* ---------Banner styling--------- */
+	.header {
+		height: 300px;
+		padding: 0;
+		margin: 0;
+		}
+	
+	.banner {
+		width: 100%;
+		height: 300px;
+		margin: 0;
+		padding: 0;
+		margin-right: -600px;
+		}
+
+/* ---------Description--------- */
+		
+	table {
+	  	width: 100%;
+	  	height: 150px;
+	  	padding: 0;
+	  	margin:0;
+	  	border-collapse: collapse;
+		}
+	
+	th {
+		width: 100%;
+		font-size: 30px;
+	  	padding: 10px;
+	  	border: 2px solid #0D131A;
+	  	text-align: center;
+		}
+
+	td {
+		width: 50%;
+		font-size: 20px;
+	  	padding: 5px;
+	  	border: 2px solid #0D131A;
+	  	text-align: left;
+		}
+	
+	ul {
+	  	list-style-type: none;
+	  	padding: 0;
+	  	margin: 0;
+		}
+	
+	p {
+	  	margin: 0;
+		}
+        
+/* ---------- Back button ----------*/
+	.Back-button-box {
+		background-color: #0d131a;
+    	display: flex;
+    	flex-direction: column;  /* Stack elements vertically */
+    	justify-content: center; 
+    	align-items: center; 
+    	gap: 20px; 
+    	padding: 10px;
+    	height: 90px;
+   		}
+			
+	.Back-button {
+		padding: 5px 10px;
+    	font-size: 20px;
+    	background-color: #ff8a00;
+    	color: white;
+    	border: none;
+    	border-radius: 5px;
+    	cursor: pointer;  		
+    	text-decoration: none;
+    	text-align: center;
+    	width: 100px;
+		}
+
+	.Back-button a{
+		padding: 5px 10px;
+  		font-size: 20px;
+  		color: white;
+  		cursor: pointer;
+		}
+		
+	.Back-button:hover {
+    	background-color: #cc6a00;
+		}
+
+	.Back-button-box {
+		color: white;
+		}		

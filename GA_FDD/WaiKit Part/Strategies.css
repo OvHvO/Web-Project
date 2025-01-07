@@ -1,0 +1,191 @@
+﻿*{
+    box-sizing: border-box; /* Include padding and border in width/height for all elements */
+}
+  
+  
+body 
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+  
+  
+/* ---------Sticky Header--------- */
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    }
+    	 		
+.Grid-container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 0; 
+    margin: 0; 
+    height: auto;		
+    }
+
+
+/* ---------Logo styling--------- */
+.logo-title-container {
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+	}
+		
+.logo {
+	width: 50px;
+	height: 50px;
+	}
+		
+.logo-text {
+	object-fit: contain;
+	height: 50px;
+	max-width: 100%;
+	}
+
+
+/* ---------Navigation Header--------- */
+.header nav {
+    gap: 20px;
+	}
+
+.header nav a {
+   	color: white;
+    text-decoration: none;
+   	padding: 10px 15px;
+    font-size: 18px;
+    transition: color 1.0s ease;
+	}
+
+.header nav a:hover {
+    color: #999999;
+	}
+    
+
+/*---------Page Content---------*/
+.image-box {
+   	position: relative; 
+    width: 100%;
+    height: 62%;
+   	overflow: hidden; 
+   	}
+
+.image-box img {
+    width: 100%;
+    height: 62%;
+    object-fit: cover; 
+    overflow: hidden;
+    display: block;
+	}
+
+
+/* --------- Contents --------- */
+.image-grid 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    background-color: #5a5a5a;
+}
+
+.image-container 
+{
+    position: relative;
+    width: 45%;
+}
+  
+.image
+{   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+  
+.overlay 
+{   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1afaf;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+
+}
+  
+.image-container:hover .overlay 
+{
+    width: 100%;
+}
+  
+.imagetext 
+{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ---------- Learn more button ----------*/
+.CourtInfo-button-box {
+	background-color: #0d131a;
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+    padding: 10px;
+    height: 120px;
+   	}
+	
+.CourtInfo-button {
+	padding: 5px 10px;
+    font-size: 20px;
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  		
+    text-decoration: none;
+
+	}
+
+.CourtInfo-button a{
+	padding: 5px 10px;
+  	font-size: 20px;
+  	color: white;
+  	cursor: pointer;
+	}
+		
+.CourtInfo-button:hover {
+    background-color: #cc6a00;
+	}
+
+.CourtInfo-button-box {
+	color: white;
+	}
+		

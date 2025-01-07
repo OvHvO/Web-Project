@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--<meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Club</title>
+    <link rel="stylesheet" href="Basketball.css" type="text/css" />
+</head>
+
+<body>
+<!---------Navigation header--------->
+<header class="header">	
+	<div class="Grid-container">
+		<!-- Logo & Title -->
+		<a href="../Nixon Part/Home Page.html">
+		<div class="logo-title-container">
+    		<img src="../Images/Logo-1.png" alt="Logo" class="logo">
+    		<img src="../Images/logo-2.png" alt="TenMin Sports" class="logo-text">
+   		</div>
+   		</a>
+   		<!-- Navigation -->
+    	<nav>
+    		<a href="Social Media.html">Social Media</a>
+        	<a href="../Nixon Part/Basketball History.html">History</a>
+        	<a href="">Achievement</a>
+        	<a href="">About Us</a>
+    	 </nav>
+     </div>
+</header>
+
+
+<!--------- Banner --------->
+
+<header class="header-banner">
+		<img alt="Basketball" src="../Images/Banner-Basketball.png" class="banner">
+</header>
+
+<!--------- Slideshow --------->
+
+<div class="slideshow-container">
+    <!-- Wrapper for all slides -->
+    <div class="slides-wrapper">
+        <!-- Slide 1 -->
+        <div class="slides">
+            <img class="slides-img" alt="Basketball 1" src="../Images/Basketball 1.jpg">
+        </div>
+        <!-- Slide 2 -->
+        <div class="slides">
+            <img class="slides-img" alt="Basketball 2" src="../Images/Basketball 2.jpg">
+        </div>
+        <!-- Slide 3 -->
+        <div class="slides">
+            <img class="slides-img" alt="Basketball 3" src="../Images/Basketball 3.jpg">
+        </div>
+        <!-- Slide 4 -->
+        <div class="slides">
+            <img class="slides-img" alt="Basketball 4" src="../Images/Basketball 4.jpg">
+        </div>
+        <!-- Slide 5 -->
+        <div class="slides">
+            <img class="slides-img" alt="Basketball 5" src="../Images/Basketball 5.jpg">
+        </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+    <!-- Dots for navigation -->
+    <div class="dots-container">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0; // Current slide index
+    const slidesWrapper = document.querySelector(".slides-wrapper");
+    const slides = document.querySelectorAll(".slides");
+    const dots = document.querySelectorAll(".dot");
+    const totalSlides = slides.length;
+
+    // Function to show the slide with transition
+    function showSlide(index) {
+        // Calculate the offset for the wrapper to display the correct slide
+        const offset = -index * 100;
+        slidesWrapper.style.transform = `translateX(${offset}%)`;
+
+        // Update dots
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+    }
+
+    // Function to change slides manually
+    function changeSlide(direction) {
+        slideIndex = (slideIndex + direction + totalSlides) % totalSlides; // Ensure index wraps around
+        showSlide(slideIndex);
+    }
+
+    // Function to go to a specific slide
+    function goToSlide(index) {
+        slideIndex = index;
+        showSlide(slideIndex);
+    }
+
+    // Automatic slideshow
+    function autoSlideShow() {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlide(slideIndex);
+    }
+
+    // Initialize slideshow and start auto-slide
+    showSlide(slideIndex);
+    setInterval(autoSlideShow, 5000); // Change slide every 5 seconds
+</script>
+        
+<article class="table">	
+<table style="border: 3px #0D131A solid" width="100%" height="100%">
+<tr>
+	<th colspan="2">Why must join our Basketball Club?</th>
+</tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Professional Coaching</li>
+                <li>Comprehensive Skill Development</li>
+                <li>Advanced Facilities</li>
+                <li>Competitive Atmosphere</li>
+                <li>Performance Monitoring</li>
+            </ul>
+        </td>
+        <td>
+            <p>Time: 9.00 a.m – 11.00 p.m</p>
+            <p>Location: MVP Basketball Academy</p>
+        </td>
+    </tr>
+</table>
+</article>
+
+<section class="MC-button-box">
+	<table>
+		<tr>
+			<td>
+				<p>Not really fimiliar with the rules? Click this button!</p><br/>
+				<a href="Basketball Rules.html" class="Nav-button">Learn more</a>
+			</td>
+			<td>
+				<p>Benefits of playing basketball</p><br/>
+				<a href="Basketball Club.html" class="Nav-button">Learn more</a>
+			</td>
+		</tr>
+	</table>
+</section>
+
+</body>
+
+</html>

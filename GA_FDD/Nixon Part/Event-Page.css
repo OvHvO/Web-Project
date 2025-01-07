@@ -1,0 +1,317 @@
+﻿*{
+  box-sizing: border-box; /* Include padding and border in width/height for all elements */
+  }
+
+
+body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+        font-family: Arial, sans-serif;
+        }
+
+
+/* ---------Sticky Header--------- */
+    .header {
+    	position: sticky;
+    	top: 0;
+    	width: 100%;
+    	background-color: #000000;
+    	padding: 10px 20px;
+    	z-index: 1000;
+    	box-sizing: border-box;
+    	position: fixed;
+        }
+    	 		
+	.Grid-container {
+    	display: grid;
+    	grid-template-columns: 50% auto;
+    	align-items: center; 
+    	justify-content: space-between; 
+    	gap: 20px; 
+    	padding: 0; 
+    	margin: 0; 
+    	height: auto;		
+    	}
+
+
+/* ---------Logo styling--------- */
+	.logo-title-container {
+    	justify-content: flex-end;
+    	gap: 10px;
+    	padding: 0px;
+    	margin: 0px;
+		}
+		
+	.logo {
+		width: 50px;
+		height: 50px;
+		}
+		
+	.logo-text {
+		object-fit: contain;
+		height: 50px;
+		max-width: 100%;
+		}
+
+
+/* ---------Navigation Header--------- */
+    .header nav {
+    	gap: 20px;
+		}
+
+	.header nav a {
+   		color: white;
+    	text-decoration: none;
+   		padding: 10px 15px;
+    	font-size: 18px;
+    	transition: color 1.0s ease;
+		}
+
+	.header nav a:hover {
+    	color: #999999;
+		}
+		
+
+/* ---------- Blank box ----------*/
+	.Blank {
+		background-color: #0d131a;
+		width: 100%;
+		height: 74px;
+		}	
+
+
+/*---------Page Content---------*/
+	.image-box {
+   		position: relative; 
+    	width: 100%;
+    	height: 62%;
+   		overflow: hidden; /* Prevents content overflowing */
+		}
+
+	.image-box img {
+    	width: 100%;
+    	height: 62%;
+    	object-fit: cover; /* Keeps the aspect ratio of the image while covering the box */
+    	overflow: hidden;
+    	display: block;
+		}
+
+
+/*---------Comp. Schedule-Box---------*/
+	.Box {
+	 	background-color:#1c1c1c;
+	 	width: 100%;
+	 	height: 320px;
+	 	padding: 10px;
+	 	box-sizing: border-box;
+	 	text-align: center;
+	 	color: white;
+	 	}
+
+			
+
+/*---------Comp. Schedule Section---------*/
+	.Box .comp-title {
+		margin: 5px;
+		font-size: 30px;
+	 	font-weight: bold;
+		}
+		
+	.comp-container {
+		display: flex;
+  		gap: 10px; /* Space between the boxes */
+  		overflow: hidden; /* Prevents text overflowing */
+  		width: 100%;
+  		padding: 0px;
+  		justify-content: space-around;
+  		white-space: normal; /* Prevent text from staying on one line */
+    	}
+
+	.comp-item {
+    	background-color: #2c2c2c;
+  		width: 400px;
+  		height: 200px;
+  		padding: 5px;
+  		margin-right: 50px;
+  		margin-top: 50px;
+  		border-radius: 10px;
+  		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  		transition: transform 0.3s ease, box-shadow 0.3s ease;
+  		color: white;
+  		text-align: center;
+  		overflow: hidden;
+   		margin: 30px;
+  		}	
+		
+	.comp-item:hover {
+   		transform: translateY(-10px);
+    	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+		}
+		
+	table {
+    	width: 100%; /* Make the table take the full width of the box */
+    	border-collapse: collapse; /* Ensures no extra space between cells */
+		}
+
+	th, td {
+		width: 50%;
+    	padding: 5px; 
+    	text-align: center; 
+       	font-weight: bold;
+   		}
+		    			    	
+	th {
+		color: #ff8a00;
+		}
+		
+	td {
+		color: white;
+		}
+	
+
+/*---------Upcoming Event Box---------*/
+	.Upcoming-Box {
+		background-color: #0d131a;
+		width: 100%;
+		padding: 10px;
+	 	box-sizing: border-box;
+	 	text-align: center;
+	 	color: white;
+		}
+		
+	.Upcoming-Box .upcoming-text {
+		margin: 5px;
+		font-size: 30px;
+	 	font-weight: bold;
+		}
+		
+	.upcoming-container {
+		display: flex;
+  		gap: 10px; /* Space between the boxes */
+  		overflow: hidden; /* Prevents text overflowing */
+  		width: 100%;
+  		padding: 30px;
+  		justify-content: space-around;
+  		white-space: normal; /* Prevent text from staying on one line */
+    	}
+
+	.upcoming-item {
+    	background-color: #2c2c2c;
+  		width: 400px;
+  		height: auto;
+  		padding: 20px;
+  		margin: 30px;
+  		border-radius: 10px;
+  		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  		transition: transform 0.3s ease, box-shadow 0.3s ease;
+  		color: white;
+  		text-align: center;
+  		overflow: hidden;
+  		}	
+		
+	.upcoming-item:hover {
+   		transform: translateY(-10px);
+    	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+		}
+		
+	.upcoming-item h3 {
+    	font-size: 1.5em;
+    	margin-bottom: 15px;
+    	color: #f39c12;
+		}
+		
+/*---------Social Media Box---------*/
+	.Social-Box {
+		background-color: #CCCCCC;
+		width: 100%;
+		height: 410px;
+		margin: 0px;
+		}
+		
+	.Social { 
+		font-size: 30px; 
+		font-weight: bold; 
+		padding: 10px;
+		text-align: center;
+		}
+		
+    .social-heading { 
+    	font-size: 20px; 
+    	color: #555; 
+    	margin: 10px 0; 
+		padding-left: 10px;
+		text-align: center;
+    	}
+    	
+    .card-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 20px;
+    	}
+        	
+    .card {
+        width: 450px;
+        height: 290px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        background-color: #FFFFFF;
+
+   		}
+   		
+    .card-header, .card-footer {
+        padding: 10px;
+        font-size: 14px;
+        color: black;
+        display: flex;
+        align-items: center;
+    	}
+        	
+    .circle { 
+    	width: 30px; 
+    	height: 30px; 
+    	border-radius: 50%; 
+    	background-color: black; 
+    	margin-right: 8px; 
+    	}
+    	
+    .circle {
+		font-size: 5px;
+		}
+        	
+    .card-image {
+        background-color: #ddd;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #aaa;
+        font-size: 16px;
+        position: relative;
+    	}
+    
+    .card-image span {
+		position: absolute;
+		background-color: black;
+		bottom: 40px;
+		font-weight: bold;
+		font-size: 20px;
+		color: white;
+		}
+    	
+    .TenMeme-image {
+		width: 50%;
+		height: 200px;
+		}
+		
+	.night-sky-image {
+		width: 65%;
+		height: 200px;
+		}
+		
+		
+	

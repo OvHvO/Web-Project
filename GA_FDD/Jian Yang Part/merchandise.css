@@ -1,0 +1,264 @@
+﻿/*  Merchandise.CSS */
+
+*{
+	box-sizing:border-box;
+	
+}
+
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	width:100%;
+	height:100%;
+	padding:0px;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #000000;
+	padding: 10px 20px;
+	z-index: 1000;
+	box-sizing: border-box;
+	}
+			 
+.Grid-container {
+	display: grid;
+	grid-template-columns: 50% auto;
+	align-items: center; 
+	justify-content: space-between; 
+	gap: 20px; 
+	padding: 0; 
+	margin: 0; 
+	height: auto;
+	width: 100%;		
+	}
+
+/* LOGO DEFINE */
+.logo-text-container {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	}
+	
+.logo {
+	width: 50px;
+	height: 50px;
+	}
+	
+.logo-text {
+	object-fit: contain;
+	height: 50px;
+	max-width: 100%;
+	}
+
+
+.header nav {
+	gap: 20px;
+	}
+
+.header nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-size: 18px;
+	transition: color 1.0s ease;
+	}
+
+.header nav a:hover {
+	color: #999999;
+	}
+
+.container{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	background-color:#0D131A;
+}
+
+
+
+.banner{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0px;
+	background-color: #0D131A;
+	/*background-color:#FFE5C3;*/
+	}
+
+
+/* ---------- Learn more button ----------*/
+	.LM-button-box {
+		background-color: #0d131a;
+    	display: flex;
+    	flex-direction: column;  /* Stack elements vertically */
+    	align-items: center; 
+    	height: 50px;
+   		}
+	
+	.Learn-more-button {
+		padding: 5px 10px;
+    	font-size: 20px;
+    	background-color: #ff8a00;
+    	color: white;
+    	border: none;
+    	border-radius: 5px;
+    	cursor: pointer;  		
+    	text-decoration: none;
+
+		}
+
+	.Learn-more-button a{
+		padding: 5px 10px;
+  		font-size: 20px;
+  		color: white;
+  		cursor: pointer;
+		}
+		
+	.Learn-more-button:hover {
+    	background-color: #cc6a00;
+		}
+
+	.LM-button-box {
+		color: white;
+		}
+		
+		
+/* merchandise items */
+
+.button-shop{
+	display:flex;
+	justify-content:flex-end;
+	margin-top:0px;
+	padding-top:10px;
+	padding-right:30px;
+	width:100%;	
+	height: 100%;	
+	background-color: #0D131A;
+}
+
+/*  Cart Button */
+#cartbtn{
+	width:60px;
+	height:60px;
+	margin-bottom:20px;
+	color:black;
+	transition:color 1.0s ease;
+}
+
+div >input:hover{
+	color: #e6ce00;
+	background-color: #0D131A;
+	
+}
+
+.headtxt-mer{
+	display:flex;
+	font-size:32px;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 2px;
+	background-color: #0D131A;
+	color: white;
+}
+
+/* Button and Text (Bottom) */
+
+#flexi{
+	
+	justify-content:space-between;
+	width:300px;
+	height:150px;
+}
+
+#mer-descrip-text{
+	font-size:30px;
+	width:0px;
+	text-align:left;
+	color: white;
+}
+
+#mer-price{
+	text-align:left;
+	font-size:20px;
+	padding-top:10px;
+	color: white;
+}
+
+
+/* FOR MECHANTDISE ITEMS */
+.grid-container{
+	display:grid;
+	column-gap:30px;
+	grid-template-columns:auto auto auto;
+	background-color: #0D131A;       /*#FFE5C3;*/
+	justify-content:center;
+	width:100%;
+	height: 100%;
+}
+
+
+
+
+
+#grid-items{
+ 	margin-top:30px;
+	font-size:20px;
+	text-align:center;
+	
+}
+
+.grid-border{
+	border-bottom:solid 2px black;
+	height:450px;
+	width:100%;
+	justify-content:space-between;
+	transition:transform 0.3s ease;
+	object-fit: fill;
+}
+
+
+
+
+.grid-border:hover{
+	transform:translateY(-5px);
+	box-shadow:0px 5px 15px rgba(0,0,0,0.5);
+}
+
+#img-items{
+	width:100%;
+	height:100%;
+}
+
+
+.footer-box{
+	width:100%;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:20px;
+	box-sizing:border-box;
+	background-color:black;
+	z-index:0;
+	bottom:0;
+	margin-top:0px;
+	position:relative;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
